@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #ff5a5f;
+  background-color: #1e3a8a; /* navy blue */
   padding: 1rem 2rem;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -30,7 +30,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: white; /* links readable on navy */
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #e54e52;
+  background-color: #1d4ed8; /* slightly lighter navy on hover */
 }
 
 main {
@@ -52,6 +52,48 @@ main {
 }
 
 h2 {
-  color: #333;
+  color: #1e3a8a; /* navy heading */
   font-size: 2rem;
+}
+
+/* Inputs & Textareas */
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #c7d2fe; /* light navy border */
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #1e3a8a;
+  background-color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #1e3a8a;
+  box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
+}
+
+input::placeholder, textarea::placeholder {
+  color: #93c5fd; /* lighter navy placeholder */
+  font-style: italic;
+}
+
+/* Buttons */
+button {
+  background-color: #1e3a8a; /* navy */
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8; /* hover navy */
+  transform: scale(1.05);
 }
